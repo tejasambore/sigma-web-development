@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selector | Sigma Web Development</title>
+    <style>
+        /* .box:first-child {
+            background-color: red;
+        } */
+
+        /* .box::first-line {
+            color: yellow;
+        } */
+
+        /* .boxes * {
+            color: blue;
+            border: 1px solid rgb(171, 19, 113);
+            margin: 3px;
+        } */
+
+        /* [data-color="primary"] {
+            color: red;
+        } */
+
+        /* .box:nth-child(even) {
+            color: green;
+            background: rgb(240, 206, 122);
+        } */
+
+        /* .box:nth-child(odd) {
+            color: blueviolet;
+            background: rgb(240, 206, 122);
+        } */
+
+        /* .box:nth-last-child(1) {
+            background-color: darkolivegreen;
+            color: aliceblue;
+        } */
+
+        .boxes::before {
+            content: "I am before the boxes";
+            color: red;
+        }
+
+        .boxes::after {
+            content: "I am after the boxes";
+            color: blue;
+        }
+
+        /* ::selection {
+            color: aqua;
+            background-color: rgb(32, 28, 28);
+        } */
+
+        .box::first-letter {
+            color: red;
+            font-size: 2em;
+        }
+
+        input::placeholder {
+            color: rgb(104, 120, 162);
+        }
+
+        /* input[type="text"] {
+            color: red;
+        } */
+    </style>
+</head>
+<body>
+    <div data-color="primary" class="boxes">
+        <div class="box">Hey, I'm a box 1</div>
+        <div class="box">Hey, I'm a Box 2</div>
+        <div class="box">Hey, I'm a Box 3</div>
+        <input type="text" placeholder="Enter your name">
+
+    </div>
+</body>
+</html>
