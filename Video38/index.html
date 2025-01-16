@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox | Sigma Web Development</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            height: 40vh;
+            display: flex;
+            align-items: center;
+            /* justify-content: center; */
+            /* flex-direction: row; */
+            flex-wrap: wrap;
+            /* align-content: flex-start; */
+            flex-flow: row wrap;
+            /* gap: 20px; */
+
+            /* row-gap: 20px;
+            column-gap: 40px; */
+
+            gap: 40px 20px; 
+        }
+
+        .item {
+            height: 40px;
+            width: 65px;
+            background-color: rgb(50, 241, 50);
+            border: 1px solid rgb(4, 63, 14);
+            /* margin: 3px; */
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        .order-1 {
+            order: 1;
+        }
+
+        .order-2 {
+            order: 2;
+        }
+
+        .order-3 {
+            order: 3;
+        }
+
+        .item-2 {
+            /* flex-grow: 2; */
+            flex-shrink: 2;
+        }
+
+        .align {
+            align-self: flex-start;
+        }
+
+        .align2 {
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container"> 
+            <div class="item">1</div>
+            <div class="item item-2">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+        </div>
+    </main>
+</body>
+</html>
