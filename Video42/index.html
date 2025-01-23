@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform - Sigma Web Development</title>
+    <style>
+        .container {
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid purple;
+            
+        }
+        .box {
+            height: 50px;
+            width: 50px;
+            background-color: aliceblue;
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            /* transform: rotate(45deg); */
+            /* transform: rotate(0.25turn); */
+            /* transform: rotateX(40deg); */
+            /* transform: rotateY(40deg); */
+            /* transform: rotateZ(40deg); */
+
+            /* transform: scale(1.5); */
+            /* transform: scaleX(1.5); */
+            /* transform: scaleY(1.5); */
+
+            /* transform: translate(23px); */
+            /* transform: translate(23%); */
+            /* transform: translateX(32%); */
+            /* transform: translateY(32%); */
+            transform: translateX(34px) translateY(34px) skew(4deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>
