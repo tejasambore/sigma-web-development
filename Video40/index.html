@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout - Exercise 5</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            position: sticky;
+            top: 0;
+        }
+        nav {
+            background-color: rgb(220, 97, 216);
+            height: 56px;
+        }
+
+        main {
+            background-color: rgb(122, 89, 58);
+            color: white;
+            padding: 23px;
+        }
+        .container {
+            background-color: green;
+            /* height: 250px; */
+            margin: 12px 34px;
+            text-align: center;
+            padding: 35px 22px;
+        }
+
+        .box1 {
+            background-color: rgb(189, 47, 71);
+            height: 60vh;
+            width: 40%;
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        .box2 {
+            background-color: rgb(34, 40, 195);
+            height: 60vh;
+            width: 45%;
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        .text-box {
+            border: 2px solid white;
+            padding: 23px;
+            margin: 20px 18vw;
+            border-radius: 23px;
+            font-size: 20px;
+        }
+
+        .orange-box {
+            height: 35px;
+            width: 35px;
+            background-color: orange;
+            position: fixed;
+            bottom: 16px;
+            right: 22px;
+            border-radius: 60px;
+        }
+
+        footer {
+            height: 56px;
+            background-color: rgb(167, 134, 100);
+        }
+
+        footer p {
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="box1"></div>
+            <div class="box2"></div>
+
+            <div class="text-box">
+                <p>Welcome to Sigma Web Development Course by @CodeWithHarry</p>
+            </div>
+
+            <div class="orange-box"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>All Rights Reserved &copy CodeWithHarry - 2025 | Sigma Web Development</p>
+    </footer>
+</body>
+</html>
