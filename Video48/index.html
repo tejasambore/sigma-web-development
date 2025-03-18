@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object Fit and Position</title>
+    <style>
+        div {
+            width: 420px;
+            height: 350px;
+            /* background-color: azure; */
+            /* background-image: url('https://www.theclickcommunity.com/blog/wp-content/uploads/2019/01/woman-photographer-with-new-camera-1-840x560.jpg'); */
+            /* background-position: top right; */
+            border: 2px solid black;
+
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8H35EM6OB-uaaCq1JrzXJmv3JZLO3I7FL4gYD9TVXdAnrS_o4MUiHm_g&s');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-clip: border-box;
+        }
+
+        img {
+            width: 320px;
+            height: 300px;
+            object-fit: cover;
+            /* object-fit: contain; */
+            /* object-fit: fill;   default */
+            /* object-position: bottom right;  */
+            /* object-position: 10px 20px; */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <img src="https://www.theclickcommunity.com/blog/wp-content/uploads/2019/01/woman-photographer-with-new-camera-1-840x560.jpg" alt=""> -->
+    </div>
+</body>
+</html>
