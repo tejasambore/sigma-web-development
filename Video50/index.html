@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters</title>
+    <style>
+        img  {
+            /* <filter-function> values */
+            /* filter: blur(5px);
+            filter: brightness(0.4);
+            filter: contrast(200%);
+            filter: drop-shadow(16px 16px 20px blue);
+            filter: grayscale(50%);
+            filter: hue-rotate(90deg);
+            filter: invert(75%);
+            filter: opacity(25%);
+            filter: saturate(30%);
+            filter: sepia(60%); */
+
+            /* URL */
+            /* filter: url("filters.svg#filter-id"); */
+
+            /* Multiple filters */
+            /* filter: contrast(175%) brightness(3%);
+            filter: drop-shadow(3px 3px red) sepia(100%) drop-shadow(-3px -3px blue); */
+
+            /* Use no filter */
+            filter: none;
+
+        }
+
+        .img1 {
+            filter: blur(5px);
+            /* filter: grayscale(80%); */
+        }
+
+        .img2 {
+            filter: contrast(120%);
+             /* filter: drop-shadow(16px 16px 20px red) invert(75%); */
+        }
+
+        .img3 {
+            /* filter: hue-rotate(90deg); */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="img1" width="520" src="https://imagekit.io/blog/content/images/2019/12/image-optimization.jpg" alt="">
+        <img class="img2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy65rS1smLdyCNAY0IwL-OUJZnKDU0slBC7xjKiNKrEtfVo9U0K_rFCNy0PxGnf9hHT3I&usqp=CAU" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHO5BhVtqT4KuyYg_dxuc1yH8CsrMiapPkjLWX4ZH0wkds3Bbb6rG1Zhk9OuZb4P7eGaA&usqp=CAU" alt="">
+    </div>
+</body>
+</html>
