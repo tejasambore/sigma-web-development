@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 8 - Solution</title>
+    <style>
+        .box {
+            height: 80px;
+            width: 80px;
+            background-color: rgb(244, 52, 52);
+            border-radius: 60px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            animation: animateX 3s linear infinite, animateY 0.5s ease-out infinite alternate;
+        }
+
+        .container {
+            position: relative;
+            /* top: 50%; */
+            /* left: 50%; */
+            height: 70vh;
+            width: 80vw;
+            background-color: rgb(76, 196, 244);
+        }
+
+        @keyframes animateX {
+            from {
+                left: 0;
+            }
+            to {
+                left: 80%;
+            }
+
+            /* 0% {
+                left: 0%;
+            } 25% {
+                left: 25%;
+            } 50% {
+                left: 50%;
+            } 75% {
+                left: 75%;
+            } 100% {
+                left: 100%;
+            } */
+        }
+
+        @keyframes animateY {
+            from {
+                bottom: 0;
+            } to {
+                bottom: 20%;
+            }
+
+            /* 0% {
+                bottom: 0;
+            } 25% {
+                bottom: 25%;
+            } 50% {
+                bottom: 50%;
+            } 75% {
+                bottom: 75%;
+            } 100% {
+                bottom: 100%;
+            } */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
